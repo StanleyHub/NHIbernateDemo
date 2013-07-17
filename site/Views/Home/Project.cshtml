@@ -1,0 +1,18 @@
+﻿@model DAL.Project[]
+
+@{
+    ViewBag.Title = "Project Information";
+}
+
+<h2>@ViewBag.Title</h2>
+<table>
+    <th>
+        <td>ProjectName</td>
+    </th>
+    @foreach (var elem in @Model)
+    {
+        <tr>
+            <td>@elem.Name</td>
+        </tr>
+    }
+</table>
